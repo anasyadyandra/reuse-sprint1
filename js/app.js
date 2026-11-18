@@ -44,11 +44,11 @@ const PINPOS=[[22,30],[70,26],[34,74],[78,70]];
 const CATIC={'Buku & Modul':'book','Elektronik':'laptop','Pakaian':'shirt','Perabot Kos':'table','Alat Tulis':'tag','Lainnya':'box'};
 const ph=(ic,bg,fg)=>'data:image/svg+xml;utf8,'+encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${bg}"/><stop offset="1" stop-color="${fg}" stop-opacity=".35"/></linearGradient></defs><rect width="400" height="400" fill="url(#g)"/><g transform="translate(120 120) scale(6.6)" fill="none" stroke="${fg}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">${IC[ic]}</g></svg>`);
 const SEED=[
- {t:'Buku Pengantar Ekonomi Mankiw',k:'Buku & Modul',c:'Baik',m:'Sell',p:45000,cod:0,by:'Rani A.',fac:'FEB',d:'Edisi 7 bahasa Indonesia. Ada stabilo di bab 1–3, sisanya bersih.',img:['/images/products/mankiw-pengantar-ekonomi.jpg']},
- {t:'Meja Lipat Laptop',k:'Perabot Kos',c:'Seperti baru',m:'Swap',w:'Rak buku kecil / kipas angin',cod:1,by:'Dimas P.',fac:'FTIP',d:'Dipakai 1 semester, kaki masih kokoh.',img:['/images/products/folding-laptop-table.jpg']},
- {t:'Kemeja PMB Putih (M)',k:'Pakaian',c:'Baik',m:'Donate',cod:2,by:'Salsa N.',fac:'FISIP',d:'Buat maba yang butuh kemeja putih untuk PMB. Sudah dicuci & disetrika.',img:['/images/products/white-shirt-pmb.jpg']},
- {t:'Charger Laptop 65W USB-C',k:'Elektronik',c:'Layak pakai',m:'Sell',p:120000,cod:3,by:'Fajar H.',fac:'FMIPA',d:'Original, kabel ada sedikit lecet tapi normal.',img:['/images/products/usb-c-laptop-charger-65w.jpg']},
- {t:'Kalkulator Casio fx-991ID',k:'Alat Tulis',c:'Baik',m:'Swap',w:'Buku Statistika Dasar',cod:0,by:'Nadia K.',fac:'FTG',d:'Semua tombol berfungsi, baterai baru diganti.',img:['/images/products/casio-fx-991id-calculator.jpg']}
+ {t:'Buku Pengantar Ekonomi Mankiw',k:'Buku & Modul',c:'Baik',m:'Sell',p:45000,cod:0,by:'Rani A.',fac:'FEB',d:'Edisi 7 bahasa Indonesia. Ada stabilo di bab 1–3, sisanya bersih.',img:['mankiw-pengantar-ekonomi.jpg']},
+ {t:'Meja Lipat Laptop',k:'Perabot Kos',c:'Seperti baru',m:'Swap',w:'Rak buku kecil / kipas angin',cod:1,by:'Dimas P.',fac:'FTIP',d:'Dipakai 1 semester, kaki masih kokoh.',img:['folding-laptop-table.jpg']},
+ {t:'Kemeja PMB Putih (M)',k:'Pakaian',c:'Baik',m:'Donate',cod:2,by:'Salsa N.',fac:'FISIP',d:'Buat maba yang butuh kemeja putih untuk PMB. Sudah dicuci & disetrika.',img:['white-shirt-pmb.jpg']},
+ {t:'Charger Laptop 65W USB-C',k:'Elektronik',c:'Layak pakai',m:'Sell',p:120000,cod:3,by:'Fajar H.',fac:'FMIPA',d:'Original, kabel ada sedikit lecet tapi normal.',img:['usb-c-laptop-charger-65w.jpg']},
+ {t:'Kalkulator Casio fx-991ID',k:'Alat Tulis',c:'Baik',m:'Swap',w:'Buku Statistika Dasar',cod:0,by:'Nadia K.',fac:'FTG',d:'Semua tombol berfungsi, baterai baru diganti.',img:['casio-fx-991id-calculator.jpg']}
 ];
 
 let S={onb:0,email:'',user:null,items:[],filter:'Semua'};
